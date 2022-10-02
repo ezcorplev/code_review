@@ -23,7 +23,7 @@ fun findMissingIntInArray(nums: List<Int>): Int? {
 }
 
 fun main() {
-    val nums = listOf(0, 1, 5, 3, 2)
+    val nums = listOf(0, 1)
     val result = findMissingIntInArray(nums)
     println(result)
 }

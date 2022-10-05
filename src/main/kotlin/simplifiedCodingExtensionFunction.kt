@@ -1,4 +1,4 @@
 
-interface Animal {
-
-}
+//interface Animal {
+//
+//}

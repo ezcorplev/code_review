@@ -111,8 +111,7 @@ fun majorityElementO1v2(nums: List<Int>): Int {
             count++
         }
         else { // 3rd loop, 2 != 1 so -> count = 0, count = 1, testNum = 2
-            count = 0
-            count++
+            count = 1
             testNum = num
         }
 

@@ -64,9 +64,44 @@
 //    println("False")
 //}
 
+
 fun main() {
     var name = "Erez"
 
     println("${name.reversed()} is not ${name.uppercase()} and def not ${name.toList()}")
+
+    // Maps
+    // List
+    // Array
+    // Set
+//
+//
+//    val list = listOf<Int>(1, 2, 3, 4, 5)
+//    list[3] // 4
+//    list.indexOf(4) // 3
+//    list.contains(4) // true
+//
+//    val array = arrayOf(1, 2, 3, 4, 5)
+//
+//    array[3] = 3
+//    array.contains(4)
+//    array.indexOf(4)
+//    array.ad
+//
+//    val set = setOf(1, 2, 3, 4,5)
+//
+//    val map = mapOf<Int, String>(
+//        1 to "bla",
+//        2 to "dickie"
+//    )
+//
+//    map[2] // "dickie
+//    map.keys.forEach {
+//        if (map[it] == "dickie"){
+//            return it
+//        }
+//    }
+
+
 
 }

@@ -1,5 +1,10 @@
 //Implement a function to receives 2 lists, and returns true if lists are identical (order doesn't matter), false otherwise.
 // Hint - contains()
+
+//        REMOTE
+// MAIN      FEATURE_BRANCH
+// LOCAL
+// MAIN      FEATURE_BRANCH
 fun areIdenticals(listOne: List<Int>, listTwo: List<Int>):Boolean {
 
     // now add a condition to check the two lists list.size and see that they match, again if not return FALSE

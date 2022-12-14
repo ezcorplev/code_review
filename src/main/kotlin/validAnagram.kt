@@ -26,20 +26,19 @@ fun isAnagram(s: String, t: String): Boolean {
         } else {
             map[char] = 1 // if map does not contain key, add it with value of 1
         }
-//        println("${map[char]}")
     }
 
     for (char in t.toCharArray()) { // now we loop the second string and deduct the values
-        if (map.containsKey(char)) {
+        if (map.containsKey(char)) { // if map contains key deduct 1 from value
             map[char] = map[char]!! -1
         } else {
             println("$s -> $t is NOT an anagram!")
-            return false
+            return false // if map doesnt contain key (key is char) it is not an anagram -> false
         }
     }
 
     println("$s -> $t is an anagram!")
-    return map.values.sum() == 0
+    return map.values.sum() == 0 // after incrementing and deducting values the sum should be 0 if anagram -> true
 //
 //    val tSorted = t.toCharArray().sorted() // size = n
 //    val sSorted = s.toCharArray().sorted() // size = n

@@ -17,20 +17,19 @@
 3. repeat until int equals 1
 4. how to prevent from looping endlessly? slow == fast exit -> false
  */
+fun sumSquare(n: Int): Int {
+    var num = n // 19
+    var sum = 0
 
+    while (num > 0) {
+        val digit = num % 10 // 9
+        sum += digit * digit // 81
+        num /= 10 // 1
+    }
+    return sum
+}
 fun isHappyNumber(n: Int): Boolean {
 
-    fun sumSquare(n: Int): Int {
-        var num = n // 19
-        var sum = 0
-
-        while (num > 0) {
-            val digit = num % 10 // 9
-            sum += digit * digit // 81
-            num /= 10 // 1
-        }
-        return sum
-    }
     var slow = n
     var fast = n
 

@@ -28,7 +28,9 @@ fun singleNumberv2(nums: Array<Int>): Int {
             if (nums.sorted()[i] == nums.sorted()[i+1]) { // if num + next num are same skip twice (raise flag etc)
                 isNumDouble = true
                 continue
-            } else result = nums.sorted()[i] // if num != next num this is our single num!
+            } else {
+                result = nums.sorted()[i]
+            } // if num != next num this is our single num!
             break
         }
         result = nums.sorted()[i] // if we reached the last num without finding single num, last num is single num
@@ -37,8 +39,19 @@ fun singleNumberv2(nums: Array<Int>): Int {
     return result
 }
 
+// xor for the same number = 0
+// xor with zero = the other number
+fun singleNumberXor(nums: Array<Int>): Int {
+    var result = 0
+    for (num in nums) {
+        result = result xor num
+    }
+
+    return result
+}
+
 fun main() {
-    val nums = arrayOf(2,2,11,1,1,3,4,5,5,3,11)
-    val solution = singleNumberv2(nums)
+    val nums = arrayOf(2,2,3, 1, 3)
+    val solution = singleNumberXor(nums)
     println(solution)
 }
